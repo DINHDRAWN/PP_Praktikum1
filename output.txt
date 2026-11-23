@@ -1,0 +1,434 @@
+make: Entering directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make[1]: Entering directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make[2]: Entering directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make[2]: Leaving directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make[2]: Entering directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+[  7%] Building CXX object CMakeFiles/dnn_objlib.dir/src/lib/activation/Sigmoid.cpp.o
+[ 15%] Building CXX object CMakeFiles/dnn_objlib.dir/src/lib/activation/ScaledSigmoid.cpp.o
+[ 30%] Building CXX object CMakeFiles/dnn_objlib.dir/src/lib/activation/ReLU.cpp.o
+[ 30%] Building CXX object CMakeFiles/dnn_objlib.dir/src/lib/activation/LeakyReLU.cpp.o
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:8: error: ‘Sigmoid’ has not been declared
+    2 | double Sigmoid::activation(x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:28: error: ‘x’ was not declared in this scope
+    2 | double Sigmoid::activation(x) {
+      |                            ^
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:6:8: error: ‘Sigmoid’ has not been declared
+    6 | double Sigmoid::activationBackwards(double x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:22: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |            ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:43: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |                                 ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:13: error: ‘Sigmoid’ has not been declared
+   10 | std::string Sigmoid::getName() const {
+      |             ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:32: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   10 | std::string Sigmoid::getName() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:3:8: error: ‘ReLU’ has not been declared
+    3 | double ReLU::activation(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:10:8: error: ‘ReLU’ has not been declared
+   10 | double ReLU::activationBackwards(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:13: error: ‘ReLU’ has not been declared
+   17 | std::string ReLU::getName() const{
+      |             ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:29: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   17 | std::string ReLU::getName() const{
+      |                             ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:2:8: error: ‘LeakyReLU’ has not been declared
+    2 | double LeakyReLU::activation(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:9:8: error: ‘LeakyReLU’ has not been declared
+    9 | double LeakyReLU::activationBackwards(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:13: error: ‘LeakyReLU’ has not been declared
+   16 | std::string LeakyReLU::getName() const {
+      |             ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:34: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   16 | std::string LeakyReLU::getName() const {
+      |                                  ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:3:8: error: ‘ScaledSigmoid’ has not been declared
+    3 | double ScaledSigmoid::activation(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activation(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |            ^~~
+      |            std::min
+In file included from /usr/include/c++/13/string:51,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ActivationFunction.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ScaledSigmoid.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:1:
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:20: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                    ^~~
+      |                    std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:48: error: ‘exp’ is not a member of ‘std’
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                                                ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:7:8: error: ‘ScaledSigmoid’ has not been declared
+    7 | double ScaledSigmoid::activationBackwards(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:13: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |             ^~~
+      |             std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:19: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                   ^~~
+      |                   std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:41: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:73: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:13: error: ‘ScaledSigmoid’ has not been declared
+   11 | std::string ScaledSigmoid::getName() const {
+      |             ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:38: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   11 | std::string ScaledSigmoid::getName() const {
+      |                                      ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:8: error: ‘ScaledSigmoid’ has not been declared
+   15 | double ScaledSigmoid::getMax() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:32: error: non-member function ‘double getMax()’ cannot have cv-qualifier
+   15 | double ScaledSigmoid::getMax() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMax()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:16:12: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+   16 |     return max;
+      |            ^~~
+      |            std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:8: error: ‘ScaledSigmoid’ has not been declared
+   19 | double ScaledSigmoid::getMin() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:32: error: non-member function ‘double getMin()’ cannot have cv-qualifier
+   19 | double ScaledSigmoid::getMin() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMin()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:20:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+   20 |     return min;
+      |            ^~~
+      |            std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:79: CMakeFiles/dnn_objlib.dir/src/lib/activation/Sigmoid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:107: CMakeFiles/dnn_objlib.dir/src/lib/activation/ReLU.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:121: CMakeFiles/dnn_objlib.dir/src/lib/activation/LeakyReLU.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:93: CMakeFiles/dnn_objlib.dir/src/lib/activation/ScaledSigmoid.cpp.o] Error 1
+make[2]: Leaving directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make[1]: *** [CMakeFiles/Makefile2:122: CMakeFiles/dnn_objlib.dir/all] Error 2
+make[1]: Leaving directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+make: *** [Makefile:101: all] Error 2
+make: Leaving directory '/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/build'
+ndh@H4D1NY:/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code$ make -C build -j >> output.txt
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:8: error: ‘Sigmoid’ has not been declared
+    2 | double Sigmoid::activation(x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:3:8: error: ‘ScaledSigmoid’ has not been declared
+    3 | double ScaledSigmoid::activation(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activation(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |            ^~~
+      |            std::min
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:2:8: error: ‘LeakyReLU’ has not been declared
+    2 | double LeakyReLU::activation(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:9:8: error: ‘LeakyReLU’ has not been declared
+    9 | double LeakyReLU::activationBackwards(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:13: error: ‘LeakyReLU’ has not been declared
+   16 | std::string LeakyReLU::getName() const {
+      |             ^~~~~~~~~
+In file included from /usr/include/c++/13/string:51,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ActivationFunction.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ScaledSigmoid.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:1:
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:34: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   16 | std::string LeakyReLU::getName() const {
+      |                                  ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:20: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                    ^~~
+      |                    std::max
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:28: error: ‘x’ was not declared in this scope
+    2 | double Sigmoid::activation(x) {
+      |                            ^
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:6:8: error: ‘Sigmoid’ has not been declared
+    6 | double Sigmoid::activationBackwards(double x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:22: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |            ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:43: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |                                 ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:13: error: ‘Sigmoid’ has not been declared
+   10 | std::string Sigmoid::getName() const {
+      |             ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:32: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   10 | std::string Sigmoid::getName() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:48: error: ‘exp’ is not a member of ‘std’
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                                                ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:7:8: error: ‘ScaledSigmoid’ has not been declared
+    7 | double ScaledSigmoid::activationBackwards(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:13: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |             ^~~
+      |             std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:19: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                   ^~~
+      |                   std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:41: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:73: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:13: error: ‘ScaledSigmoid’ has not been declared
+   11 | std::string ScaledSigmoid::getName() const {
+      |             ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:38: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   11 | std::string ScaledSigmoid::getName() const {
+      |                                      ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:8: error: ‘ScaledSigmoid’ has not been declared
+   15 | double ScaledSigmoid::getMax() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:32: error: non-member function ‘double getMax()’ cannot have cv-qualifier
+   15 | double ScaledSigmoid::getMax() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMax()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:16:12: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+   16 |     return max;
+      |            ^~~
+      |            std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:8: error: ‘ScaledSigmoid’ has not been declared
+   19 | double ScaledSigmoid::getMin() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:32: error: non-member function ‘double getMin()’ cannot have cv-qualifier
+   19 | double ScaledSigmoid::getMin() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMin()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:20:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+   20 |     return min;
+      |            ^~~
+      |            std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:3:8: error: ‘ReLU’ has not been declared
+    3 | double ReLU::activation(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:10:8: error: ‘ReLU’ has not been declared
+   10 | double ReLU::activationBackwards(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:13: error: ‘ReLU’ has not been declared
+   17 | std::string ReLU::getName() const{
+      |             ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:29: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   17 | std::string ReLU::getName() const{
+      |                             ^~~~~
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:79: CMakeFiles/dnn_objlib.dir/src/lib/activation/Sigmoid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:121: CMakeFiles/dnn_objlib.dir/src/lib/activation/LeakyReLU.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:93: CMakeFiles/dnn_objlib.dir/src/lib/activation/ScaledSigmoid.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:107: CMakeFiles/dnn_objlib.dir/src/lib/activation/ReLU.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:122: CMakeFiles/dnn_objlib.dir/all] Error 2
+make: *** [Makefile:101: all] Error 2
+ndh@H4D1NY:/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code$ make -C build -j > output.txt
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:3:8: error: ‘ScaledSigmoid’ has not been declared
+    3 | double ScaledSigmoid::activation(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activation(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |            ^~~
+      |            std::min
+In file included from /usr/include/c++/13/string:51,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ActivationFunction.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/include/lib/activation/ScaledSigmoid.h:3,
+                 from /mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:1:
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:20: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                    ^~~
+      |                    std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:4:48: error: ‘exp’ is not a member of ‘std’
+    4 |     return min + ((max - min) * (1 / (1 + std::exp(-x))));
+      |                                                ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:7:8: error: ‘ScaledSigmoid’ has not been declared
+    7 | double ScaledSigmoid::activationBackwards(double x) {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:8: error: ‘Sigmoid’ has not been declared
+    2 | double Sigmoid::activation(x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:13: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |             ^~~
+      |             std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:19: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                   ^~~
+      |                   std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:41: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:8:73: error: ‘exp’ is not a member of ‘std’
+    8 |     return (max - min) * (1 / (1 + std::exp(-x))) * (1 - (1 / (1 + std::exp(-x))));
+      |                                                                         ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:13: error: ‘ScaledSigmoid’ has not been declared
+   11 | std::string ScaledSigmoid::getName() const {
+      |             ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:11:38: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   11 | std::string ScaledSigmoid::getName() const {
+      |                                      ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:2:28: error: ‘x’ was not declared in this scope
+    2 | double Sigmoid::activation(x) {
+      |                            ^
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:6:8: error: ‘Sigmoid’ has not been declared
+    6 | double Sigmoid::activationBackwards(double x) {
+      |        ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: In function ‘double activationBackwards(double)’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:22: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |            ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:7:43: error: ‘activation’ cannot be used as a function
+    7 |     return activation(x) * (1 - activation(x));
+      |                                 ~~~~~~~~~~^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:8: error: ‘ScaledSigmoid’ has not been declared
+   15 | double ScaledSigmoid::getMax() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:13: error: ‘Sigmoid’ has not been declared
+   10 | std::string Sigmoid::getName() const {
+      |             ^~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:15:32: error: non-member function ‘double getMax()’ cannot have cv-qualifier
+   15 | double ScaledSigmoid::getMax() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/Sigmoid.cpp:10:32: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   10 | std::string Sigmoid::getName() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMax()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:16:12: error: ‘max’ was not declared in this scope; did you mean ‘std::max’?
+   16 |     return max;
+      |            ^~~
+      |            std::max
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: ‘std::max’ declared here
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: At global scope:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:8: error: ‘ScaledSigmoid’ has not been declared
+   19 | double ScaledSigmoid::getMin() const {
+      |        ^~~~~~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:19:32: error: non-member function ‘double getMin()’ cannot have cv-qualifier
+   19 | double ScaledSigmoid::getMin() const {
+      |                                ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp: In function ‘double getMin()’:
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ScaledSigmoid.cpp:20:12: error: ‘min’ was not declared in this scope; did you mean ‘std::min’?
+   20 |     return min;
+      |            ^~~
+      |            std::min
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: ‘std::min’ declared here
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:2:8: error: ‘LeakyReLU’ has not been declared
+    2 | double LeakyReLU::activation(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:9:8: error: ‘LeakyReLU’ has not been declared
+    9 | double LeakyReLU::activationBackwards(double x) {
+      |        ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:13: error: ‘LeakyReLU’ has not been declared
+   16 | std::string LeakyReLU::getName() const {
+      |             ^~~~~~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/LeakyReLU.cpp:16:34: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   16 | std::string LeakyReLU::getName() const {
+      |                                  ^~~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:3:8: error: ‘ReLU’ has not been declared
+    3 | double ReLU::activation(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:10:8: error: ‘ReLU’ has not been declared
+   10 | double ReLU::activationBackwards(double x) {
+      |        ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:13: error: ‘ReLU’ has not been declared
+   17 | std::string ReLU::getName() const{
+      |             ^~~~
+/mnt/d/unirelevant/5sem/pp/übungen/1/code_V1/code/src/lib/activation/ReLU.cpp:17:29: error: non-member function ‘std::string getName()’ cannot have cv-qualifier
+   17 | std::string ReLU::getName() const{
+      |                             ^~~~~
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:79: CMakeFiles/dnn_objlib.dir/src/lib/activation/Sigmoid.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:93: CMakeFiles/dnn_objlib.dir/src/lib/activation/ScaledSigmoid.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:107: CMakeFiles/dnn_objlib.dir/src/lib/activation/ReLU.cpp.o] Error 1
+make[2]: *** [CMakeFiles/dnn_objlib.dir/build.make:121: CMakeFiles/dnn_objlib.dir/src/lib/activation/LeakyReLU.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:122: CMakeFiles/dnn_objlib.dir/all] Error 2
+make: *** [Makefile:101: all] Error 2
