@@ -131,21 +131,14 @@ void Network::trainBatch(const std::vector<std::vector<double>>& inputs, const s
                      int epochs, double learningRate) {
     //check if loss function is nullptr
     if (getLossFunction() == nullptr) {
-        throw std::logic_error("Loss Function is nullptr");
+        throw std::logic_error("Loss Function ist nullptr");
     }
     if (layers.empty()) {
-        throw std::logic_error("Network has no layers.");
+        throw std::logic_error("Network has zero layers.");
     }
     //check the dimensions of inputs and actualoutputs
-    if (inputs.size() == 0 || actualOutputs.size() == 0 || batchSize == 0 || inputs.size() != actualOutputs.size() || epochs <= 0 || learningRate <= 0.0) {
-        throw std::invalid_argument("Dimension mismatch or empty vectors");
-    }
-    const std::size_t expectedInputSize = layers.front()->getWeights()[0].size();
-    const std::size_t expectedOutputSize = layers.back()->getActivationOutput().size();
-    for (std::size_t i = 0; i < inputs.size(); ++i) {
-        if (inputs[i].size() != expectedInputSize || actualOutputs[i].size() != expectedOutputSize) {
-            throw std::invalid_argument("Sample dimensions do not match network layer dimensions.");
-        }
+    if (inputs.size() == 0 || actualOutputs.size() == 0 || batchSize == 0 || inputs.size() != actualOutputs.size()) {
+        throw std::invalid_argument("Possible dimension mismath, zero batch size or empty vectors");
     }
     //reset the cost and accuracy history
     costHistory.clear();
@@ -183,7 +176,7 @@ double Network::computeAccuracy(const std::vector<std::vector<double>>& inputs, 
     }
     //check the dimensions of inputs and actualoutputs
     if (inputs.size() == 0 || actualOutputs.size() == 0 || inputs.size() != actualOutputs.size()) {
-        throw std::invalid_argument("Dimension mismatch or empty vectors");
+        throw std::invalid_argument("Possible dimension mismath, zero batch size or empty vectors");
     }
 
     double totalCorrect = 0.0;
